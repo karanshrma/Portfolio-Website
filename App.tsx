@@ -18,8 +18,9 @@ const portfolioData = {
     email: "ks2275863@gmail.com",
     phone: "+91 78142 52797",
     linkedin: "https://linkedin.com/in/karanshrma",
+    github: "https://github.com/karanshrma"
   },
-  about: "I am a Computer Science & Engineering student (B.Tech, Amritsar College of Engineering and Technology, graduating June 2025) specializing in Flutter and Android development. I build scalable apps with modern architectures like MVVM, Bloc, and Clean Architecture.",
+  about: "I am a Computer Science & Engineering graduate specializing in Flutter and Android development. I build scalable apps with modern architectures like MVVM, Bloc, and Clean Architecture.",
   experiences: [
     {
       role: "Android Developer Intern",
