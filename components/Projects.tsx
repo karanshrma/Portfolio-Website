@@ -31,19 +31,30 @@ interface ProjectCardProps {
   project: Project;
 }
 
-const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => (
-  <div className="bg-slate-800/50 rounded-lg p-6 group transition-all duration-300 hover:bg-slate-800/80 hover:shadow-2xl hover:shadow-indigo-900/50 hover:-translate-y-2">
-    <h3 className="text-xl font-bold text-white mb-2">{project.title}</h3>
-    <p className="text-slate-400 mb-4">{project.description}</p>
-    <div className="flex flex-wrap gap-2">
-      {project.tech.map((t, i) => (
-        <span key={i} className="bg-slate-700 text-indigo-300 text-xs font-semibold px-3 py-1 rounded-full">
-          {t}
-        </span>
-      ))}
+const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
+  const handleClick = () => {
+    if (project.link) {
+      window.open(project.link, '_blank', 'noopener,noreferrer');
+    }
+  };
+
+  return (
+    <div
+      onClick={handleClick}
+      className={`bg-slate-800/50 rounded-lg p-6 group transition-all duration-300 hover:bg-slate-800/80 hover:shadow-2xl hover:shadow-indigo-900/50 hover:-translate-y-2 ${project.link ? 'cursor-pointer' : ''}`}
+    >
+      <h3 className="text-xl font-bold text-white mb-2">{project.title}</h3>
+      <p className="text-slate-400 mb-4">{project.description}</p>
+      <div className="flex flex-wrap gap-2">
+        {project.tech.map((t, i) => (
+          <span key={i} className="bg-slate-700 text-indigo-300 text-xs font-semibold px-3 py-1 rounded-full">
+            {t}
+          </span>
+        ))}
+      </div>
     </div>
-  </div>
-);
+  );
+};
 
 interface ProjectsProps {
   projects: Project[];

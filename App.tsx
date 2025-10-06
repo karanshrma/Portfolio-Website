@@ -56,7 +56,7 @@ const portfolioData = {
   skills: [
     {
       title: "Languages",
-      skills: ["Dart", "Kotlin", "JavaScript", "Python"],
+      skills: ["Dart", "JavaScript", "Python"],
     },
     {
       title: "Frameworks",
