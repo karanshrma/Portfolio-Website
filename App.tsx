@@ -38,21 +38,19 @@ const portfolioData = {
       title: "E-Commerce App (Amazon Clone)",
       description: "A feature-rich e-commerce application mirroring core Amazon functionalities.",
       tech: ["Flutter", "Dart", "Node.js", "MongoDB", "Provider", "GPay"],
+      link: "https://drive.google.com/file/d/1EyOqp3XGLSnsL8ZAYbRae7zNuUtPxcL1/view?usp=sharing",
     },
     {
       title: "AI Q&A App (Perplexity Clone)",
       description: "An intelligent question-answering app powered by the Gemini API.",
       tech: ["Flutter", "Dart", "FastAPI", "Python", "Gemini API"],
+      link: "https://drive.google.com/file/d/1eWRpJ7hCDLIn3srLNW7LsBOtggF6ZPms/view?usp=sharing",
     },
     {
       title: "Flutter Clean Architecture Blog App",
       description: "A robust blogging platform built using clean architecture principles for scalability.",
       tech: ["Flutter", "Dart", "Bloc", "Supabase", "Hive"],
-    },
-    {
-      title: "Social Media App",
-      description: "A social networking app with real-time features and robust backend services.",
-      tech: ["Kotlin", "Firebase", "Zego", "Supabase"],
+      link: "https://drive.google.com/file/d/1QsD94We63cUrzaq0SiV2Vhmog3U4ZtwO/view?usp=sharing",
     },
   ] as Project[],
   skills: [
